@@ -46,6 +46,14 @@ class Array {
 
     return deletedItem;
   }
+  findIndexOf(callback) {
+    for (let i = 0; i < this.length; i++) {
+      if (callback(this.data[i], i)) {
+        return i;
+      }
+    }
+    return undefined;
+  }
 }
 
 const myArray = new Array();
@@ -56,5 +64,5 @@ myArray.push("strawberry");
 myArray.push("mango");
 myArray.push("kiwi");
 myArray.deleteByIndex(5);
-
+console.log(myArray.findIndexOf((fruit) => fruit === "apple"));
 console.log(myArray);
