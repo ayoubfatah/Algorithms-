@@ -16,8 +16,8 @@ class LinkList {
 
   push(value) {
     let newNode = new Node(value);
-    this.tail.next = newNode;
     this.tail = newNode;
+    this.tail.next = newNode;
     this.length++;
   }
 }
@@ -29,3 +29,6 @@ myLinkedList.push(22);
 myLinkedList.push(12);
 
 console.log(myLinkedList);
+// {head :{head:1 , next: null}: , tail:{head:2 , next : null}}
+// 
+//
