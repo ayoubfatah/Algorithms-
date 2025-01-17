@@ -264,7 +264,7 @@ class SmartTextTransformer {
   }
 
   _detectLanguage(text) {
-    // Simple language detection based on character frequency
+    // Simple language detection based on character frequency 
     const freq = {};
     text.split("").forEach((char) => {
       freq[char] = (freq[char] || 0) + 1;
