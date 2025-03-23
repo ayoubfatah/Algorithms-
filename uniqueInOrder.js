@@ -12,3 +12,9 @@ function uniqueInOrder(str) {
   return unique;
 }
 console.log(uniqueInOrder("AAAABBBCCDAABBB"));
+
+
+//  33 = 3*3 = 9 
+
+// 321 = 3* 2 *1 = 6 
+// 3*9 = 2*7 = 1*4 =  4 
