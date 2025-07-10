@@ -14,6 +14,7 @@ function charCount(str) {
   const counts = {};
   string.forEach((c) => {
     if (c.charCodeAt(0) < 97 || c.charCodeAt(0) > 122) return;
+
     if (counts[c] >= 1) {
       counts[c] += 1;
     } else {
