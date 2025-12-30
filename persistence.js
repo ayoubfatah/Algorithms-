@@ -19,5 +19,21 @@ function persistence(number) {
   return index;
 }
 
-const result = persistence(999);
+function persistence2(num) {
+  let count = 0;
+
+  for (;;) {
+    if (num < 10) return count;
+
+    num = num
+      .toString()
+      .split("")
+      .reduce((acc, d) => acc * d);
+
+    count++;
+  }
+}
+
+const result = persistence2(999);
+
 console.log(result, "result");
